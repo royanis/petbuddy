@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PetBuddy Privacy Policy - Learn how we protect your data and respect your privacy with our pet care app.">
+    <title>PetBuddy - Privacy Policy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Base Styles */
+        :root {
+            --mint-green: #8ED3C4;
+            --light-mint: #b5e4d9;
+            --peach: #FFCDC2;
+            --light-peach: #FFE5DF;
+            --dark-text: #444444;
+            --white: #FFFFFF;
+            --light-gray: #F5F5F5;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+            --border-radius: 12px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-color: var(--white);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--mint-green);
+            color: var(--dark-text);
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            background-color: var(--light-mint);
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            color: #666;
+        }
+        
+        /* Decorative Elements */
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            z-index: -1;
+            opacity: 0.7;
+        }
+        
+        .blob-1 {
+            width: 300px;
+            height: 300px;
+            background-color: var(--mint-green);
+            top: -100px;
+            left: -100px;
+        }
+        
+        .blob-2 {
+            width: 400px;
+            height: 400px;
+            background-color: var(--peach);
+            bottom: -200px;
+            right: -200px;
+        }
+        
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: var(--mint-green);
+        }
+        
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            font-weight: 600;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--mint-green);
+            transition: var(--transition);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .nav-links a:hover {
+            color: var(--mint-green);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--dark-text);
+        }
+        
+        /* Page Header */
+        .page-header {
+            padding: 160px 0 80px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--light-mint) 0%, var(--light-mint) 100%);
+            text-align: center;
+        }
+        
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .page-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .page-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        
+        /* Privacy Policy Content */
+        .policy-content {
+            padding: 80px 0;
+            position: relative;
+        }
+        
+        .policy-container {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            box-shadow: var(--shadow);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .policy-section {
+            margin-bottom: 40px;
+        }
+        
+        .policy-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .policy-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--mint-green);
+            border-bottom: 2px solid var(--light-mint);
+            padding-bottom: 10px;
+        }
+        
+        .policy-text {
+            margin-bottom: 20px;
+        }
+        
+        .policy-list {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .policy-list li {
+            margin-bottom: 10px;
+        }
+        
+        .policy-highlight {
+            background-color: var(--light-mint);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+        }
+        
+        .policy-highlight-title {
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .last-updated {
+            font-style: italic;
+            margin-top: 40px;
+            text-align: right;
+            color: #888;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-text);
+            color: var(--white);
+            padding: 60px 0 20px;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--mint-green);
+        }
+        
+        .footer-desc {
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+        
+        .footer-title {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--mint-green);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a:hover {
+            color: var(--mint-green);
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        
+        .social-link:hover {
+            background-color: var(--mint-green);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .page-title {
+                font-size: 3rem;
+            }
+            
+            .policy-title {
+                font-size: 1.6rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                flex-direction: column;
+                background-color: var(--white);
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                padding: 20px 0;
+                text-align: center;
+                gap: 0;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                padding: 15px 0;
+                width: 100%;
+                border-bottom: 1px solid #eee;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .page-title {
+                font-size: 2.5rem;
+            }
+            
+            .policy-container {
+                padding: 30px 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .policy-title {
+                font-size: 1.4rem;
+            }
+            
+            .policy-container {
+                padding: 20px 15px;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Decorative Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-paw"></i> PetBuddy
+            </a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="why-petbuddy.html">Why PetBuddy</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container header-content">
+            <h1 class="page-title">Privacy Policy</h1>
+            <p class="page-subtitle">We take your privacy seriously. Learn how PetBuddy protects your data and respects your privacy.</p>
+        </div>
+    </section>
+    
+    <!-- Privacy Policy Content -->
+    <section class="policy-content">
+        <div class="container policy-container">
+            
+            <div class="policy-section">
+                <h2 class="policy-title">Introduction</h2>
+                <p class="policy-text">Welcome to PetBuddy's Privacy Policy. This document outlines how we collect, use, and protect your information when you use our pet care application.</p>
+                <p class="policy-text">At PetBuddy, we are committed to protecting your privacy and ensuring you have complete control over your data. This policy explains our practices regarding data storage, usage, and your rights as a user.</p>
+                
+                <div class="policy-highlight">
+                    <h3 class="policy-highlight-title">Our Privacy Commitment:</h3>
+                    <p>PetBuddy is designed with privacy as a core principle. All your pet's information is stored locally on your device, not on our servers. We believe your pet's data belongs to you and should remain under your control.</p>
+                </div>
+            </div>
+            
+            <div class="policy-section">
+                <h2 class="policy-title">Information We Collect</h2>
+                <p class="policy-text">PetBuddy is primarily a local storage application, which means the majority of your data remains on your device. However, we do collect minimal information to provide and improve our service:</p>
+                
+                <h3>Data Stored Locally (on your device only):</h3>
+                <ul class="policy-list">
+                    <li><strong>Pet Information:</strong> Details about your pets including name, breed, age, weight, and other characteristics.</li>
+                    <li><strong>Health Records:</strong> Vaccination history, medication schedules, vet visits, and health notes.</li>
+                    <li><strong>Care Activities:</strong> Feeding times, walk logs, grooming records, and other care activities.</li>
+                    <li><strong>Journal Entries:</strong> Photos, videos, notes, and memories you create within the app.</li>
+                    <li><strong>Growth Data:</strong> Measurements and growth tracking information.</li>
+                    <li><strong>Reminders:</strong> All scheduled reminders and notifications.</li>
+                </ul>
+                
+                <h3>App Usage Data We May Collect:</h3>
+                <ul class="policy-list">
+                    <li><strong>Diagnostic Information:</strong> Anonymous crash reports and performance metrics to help improve app stability.</li>
+                    <li><strong>Feature Usage:</strong> Anonymous data about which features are used most frequently to guide our development priorities.</li>
+                    <li><strong>Device Information:</strong> Basic device model, operating system version, and app version to assist with troubleshooting.</li>
+                </ul>
+            </div>
+            
+            <div class="policy-section">
+                <h2 class="policy-title">How We Use Your Information</h2>
+                <p class="policy-text">The limited data we collect is used solely for the following purposes:</p>
+                
+                <ul class="policy-list">
+                    <li><strong>Improving the App:</strong> We analyze anonymous usage patterns and crash reports to enhance app functionality and fix technical issues.</li>
+                    <li><strong>Providing Support:</strong> When you contact us for support, we may use device information to help troubleshoot problems.</li>
+                    <li><strong>Feature Development:</strong> Understanding which features are most valuable helps us prioritize future development.</li>
+                </ul>
+                
+                <p class="policy-text">We <strong>DO NOT</strong> use your information for:</p>
+                <ul class="policy-list">
+                    <li>Selling or renting to third parties</li>
+                    <li>Creating user profiles for advertising</li>
+                    <li>Tracking your behavior outside the app</li>
+                </ul>
+            </div>
+            
+            <div class="policy-section">
+                <h2 class="policy-title">Third-Party Services</h2>
+                <p class="policy-text">PetBuddy uses the following third-party services:</p>
+                
+                <h3>Google AdMob</h3>
+                <p class="policy-text">We use Google AdMob to display advertisements within the app. AdMob may collect certain information to serve relevant ads. This information may include:</p>
+                <ul class="policy-list">
+                    <li>Device type and properties</li>
+                    <li>Mobile advertising identifiers (such as Android Advertising ID or iOS IDFA)</li>
+                    <li>General location information (city level, not precise)</li>
+                    <li>Connection information</li>
+                </ul>
+                
+                <p class="policy-text">For more information about AdMob's privacy practices, please visit Google's <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>. You can opt out of personalized advertising by visiting Google's <a href="https://adssettings.google.com/" target="_blank">Ad Settings</a> or by using your device's opt-out settings.</p>
+                
+                <h3>Crash Analytics</h3>
+                <p class="policy-text">We use a crash reporting tool to identify and fix app issues. This service collects anonymous crash data and does not contain personally identifiable information.</p>
+            </div>
+            
+            <div class="policy-section">
+                <h2 class="policy-title">Data Security</h2>
+                <p class="policy-text">We take data security seriously and implement the following measures:</p>
+                
+                <ul class="policy-list">
+                    <li><strong>Local Storage:</strong> Your pet's core data is stored locally on your device, reducing online security risks.</li>
+                    <li><strong>Minimal Data Collection:</strong> We collect only what's necessary to provide and improve the service.</li>
+                    <li><strong>Secure Data Transmission:</strong> Any data transmitted to our servers (such as crash reports) is encrypted using industry-standard protocols.</li>
+                </ul>
+                
+                <p class="policy-text">While we implement safeguards, please be aware that no method of electronic storage or transmission is 100% secure. We strive to use commercially acceptable means to protect your information.</p>
+            </div>
+            
+            <div class="policy-section">
+                <h2 class="policy-title">Your Rights and Choices</h2>
+                <p class="policy-text">You have several rights regarding your information:</p>
+                
+                <ul class="policy-list">
+                    <li><strong>Access and Control:</strong> Since your pet's data is stored locally, you already have direct access and control.</li>
+                    <li><strong>Data Backup:</strong> You can use the app's backup feature to create local backups of your data.</li>
+                    <li><strong>Data Deletion:</strong> You can delete your data through the app's settings or by uninstalling the app.</li>
+                    <li><strong>Ad Personalization:</strong> You can opt out of personalized ads through your device settings or Google's Ad Settings.</li>
+                    <li><strong>Usage Analytics:</strong> You can opt out of anonymous usage analytics in the app settings.</li>
+                </ul>
+            </div>
+            
+            <div class="policy-section">
+                <h2 class="policy-title">Children's Privacy</h2>
+                <p class="policy-text">PetBuddy is not designed for or directed at children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us so we can take appropriate action.</p>
+            </div>
+            
+            <div class="policy-section">
+                <h2 class="policy-title">Changes to This Policy</h2>
+                <p class="policy-text">We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+                <p class="policy-text">We recommend reviewing this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+            </div>
+            
+            <div class="policy-section">
+                <h2 class="policy-title">Contact Us</h2>
+                <p class="policy-text">If you have any questions about this Privacy Policy or our data practices, please contact us at:</p>
+                <p class="policy-text"><strong>Email:</strong> royanis@gmail.com</p>
+            </div>
+            
+            <p class="last-updated">Last Updated: April 28, 2025</p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div>
+                    <div class="footer-logo">
+                        <i class="fas fa-paw"></i> PetBuddy
+                    </div>
+                    <p class="footer-desc">Your complete companion app for better pet parenting. Track health, schedule reminders, and capture precious moments.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="why-petbuddy.html">Why PetBuddy</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Features</h3>
+                    <ul class="footer-links">
+                        <li><a href="features.html#health">Health Tracking</a></li>
+                        <li><a href="features.html#growth">Growth Charts</a></li>
+                        <li><a href="features.html#reminders">Smart Reminders</a></li>
+                        <li><a href="features.html#care">Care Logging</a></li>
+                        <li><a href="features.html#journal">Pet Journal</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> royanis@gmail.com</li>
+                        <li><a href="contact.html">Send us a message</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>Built with love for every pet parent. 🐾</p>
+                <p>&copy; 2025 PetBuddy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Scroll Animation
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.padding = '5px 0';
+                header.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.padding = '10px 0';
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            }
+        });
+    </script>
+</body>
+</html>('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove
