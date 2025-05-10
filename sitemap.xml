@@ -1,42 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://www.petbuddyapp.com/</loc>
-  <lastmod>2025-05-09T22:38:54+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.petbuddyapp.com/index.html</loc>
-  <lastmod>2025-05-09T22:38:54+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.petbuddyapp.com/features.html</loc>
-  <lastmod>2025-05-09T22:38:54+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.petbuddyapp.com/why-petbuddy.html</loc>
-  <lastmod>2025-05-09T22:38:54+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.petbuddyapp.com/privacy.html</loc>
-  <lastmod>2025-05-09T22:38:54+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.petbuddyapp.com/contact.html</loc>
-  <lastmod>2025-05-09T22:38:54+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://petbuddyapp.com/</loc>
+        <lastmod>2025-05-11</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://petbuddyapp.com/img/app-screenshot-1.png</image:loc>
+            <image:title>PetBuddy App Dashboard</image:title>
+            <image:caption>PetBuddy dashboard showing pet health tracking features</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://petbuddyapp.com/img/petbuddy-appstore-qr.png</image:loc>
+            <image:title>Download PetBuddy App QR Code</image:title>
+            <image:caption>Scan to download PetBuddy from the App Store</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Homepage (index.html) - canonical should point to root -->
+    <url>
+        <loc>https://petbuddyapp.com/index.html</loc>
+        <lastmod>2025-05-11</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Features Page -->
+    <url>
+        <loc>https://petbuddyapp.com/features.html</loc>
+        <lastmod>2025-05-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://petbuddyapp.com/img/app-screenshot-2.png</image:loc>
+            <image:title>PetBuddy Health Tracking</image:title>
+            <image:caption>Health tracking features in PetBuddy app</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://petbuddyapp.com/img/app-screenshot-3.png</image:loc>
+            <image:title>PetBuddy Pet Journal</image:title>
+            <image:caption>Digital pet journal and memory keeper</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://petbuddyapp.com/img/app-screenshot-4.png</image:loc>
+            <image:title>PetBuddy Care Activity Log</image:title>
+            <image:caption>Daily pet care activity tracking</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://petbuddyapp.com/img/app-screenshot-5.png</image:loc>
+            <image:title>PetBuddy Smart Reminders</image:title>
+            <image:caption>Smart reminder system for pet care tasks</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://petbuddyapp.com/img/app-screenshot-6.png</image:loc>
+            <image:title>PetBuddy Growth Charts</image:title>
+            <image:caption>Interactive growth charts for pet development</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Why PetBuddy Page -->
+    <url>
+        <loc>https://petbuddyapp.com/why-petbuddy.html</loc>
+        <lastmod>2025-05-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Privacy Policy -->
+    <url>
+        <loc>https://petbuddyapp.com/privacy.html</loc>
+        <lastmod>2025-05-11</lastmod>
+        <changefreq>quarterly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Contact Page -->
+    <url>
+        <loc>https://petbuddyapp.com/contact.html</loc>
+        <lastmod>2025-05-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
